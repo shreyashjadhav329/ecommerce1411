@@ -77,12 +77,9 @@ if(isPresent){
   alert("product is already present in cart");
 
 }
-else{
-cartProduct.push(unique_obj_data);
-  localStorage.setItem("cart",JSON.stringify(cartProduct));
-  alert("Product is added to cart");
+
+    cartProduct.push(unique_obj_data)
+    localStorage.setItem("cart",JSON.stringify(cartProduct))
  
-}
-window.location.href="cart.html";
   
 })
